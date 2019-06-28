@@ -37,3 +37,27 @@ class BinarySearch {
         return -1
     }
 }
+/*
+ 方法2：不使用递归使用循环
+ class func binarySearch(num:Int,array:Array<Int>) -> Int {
+ 
+ var startIndex = 0;
+ var endIndex = array.count-1;
+ var middleNum = startIndex;
+ while array[middleNum] != num {
+ 
+ middleNum = (startIndex + endIndex) / 2
+ if array[middleNum] > num {
+ 
+ endIndex = middleNum-1
+ }
+ 
+ if array[middleNum] < num {
+ 
+ startIndex = middleNum+1
+ }
+ }
+ 
+ return middleNum
+ }
+ */
